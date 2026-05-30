@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TOWER FORCE ONE — Defend the Homeland from Illegal Aliens</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <h1>🇺🇸 TOWER FORCE ONE 🛸</h1>
+      <p class="tag">Defend the Homeland from <em>illegal aliens</em> — the outer-space kind.</p>
+    </header>
+
+    <div id="main">
+      <div id="stagewrap">
+        <canvas id="game" width="864" height="528"></canvas>
+        <div id="overlay" class="hidden">
+          <div class="overlay-card">
+            <h2 id="overlay-title">Title</h2>
+            <p id="overlay-text">Text</p>
+            <button id="overlay-btn" class="btn big">Start</button>
+          </div>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <div id="hud">
+          <div class="stat"><span class="ico">💰</span><span id="gold">0</span></div>
+          <div class="stat"><span class="ico">❤️</span><span id="lives">0</span></div>
+          <div class="stat"><span class="ico">🌊</span><span id="wave">0/0</span></div>
+          <div class="stat"><span class="ico">⭐</span><span id="score">0</span></div>
+        </div>
+
+        <div class="panel">
+          <h3>Build Defenses</h3>
+          <div id="shop"></div>
+        </div>
+
+        <div class="panel" id="infopanel">
+          <h3>Intel</h3>
+          <div id="info">Pick a defense, then click an open lot to build. Aliens follow the road to the Capitol — don't let them through.</div>
+        </div>
+
+        <div class="panel controls">
+          <button id="startBtn" class="btn primary">▶ Start Wave <small>(Space)</small></button>
+          <div class="ctl-row">
+            <button id="pauseBtn" class="btn">⏸ Pause</button>
+            <button id="speedBtn" class="btn">⏩ 1×</button>
+          </div>
+          <div class="ctl-row">
+            <button id="muteBtn" class="btn">🔊 Sound</button>
+            <button id="restartBtn" class="btn">🔄 Restart</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer>Satire. The "aliens" are extraterrestrials. Built with vanilla JS &amp; HTML5 canvas. Hotkeys: <b>1-6</b> build · <b>Space</b> wave · <b>P</b> pause · <b>Esc</b> cancel.</footer>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/entities.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
